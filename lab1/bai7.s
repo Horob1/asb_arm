@@ -1,0 +1,31 @@
+
+	AREA RESET, DATA, READONLY
+		DCD 0x20000000
+		DCD Start
+	
+	AREA MAINSOURCE, CODE, READONLY
+		ENTRY
+
+So1 EQU 20
+So2 EQU 40
+
+Start
+	MOV R0, #So1
+	MOV R1, #So2
+Loop 
+	CMP R0, R1
+	BGT HoanDoi
+TiepTuc
+	SUB R1, R0
+	CMP R1, R0
+	BEQ Stop
+	B Loop
+HoanDoi
+	MOV R2, R0
+	MOV R0, R1
+	MOV R1, R2
+	B TiepTuc
+Stop 
+	B Stop
+	END
+
