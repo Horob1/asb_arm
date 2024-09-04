@@ -1,1 +1,22 @@
-"# asb_arm" 
+# 📚 Lab Lập Trình Hợp Ngữ ARM Assembly
+
+Chào mừng bạn đến với các bài lab của môn **Lập Trình Hợp Ngữ ARM Assembly**! Dưới đây là danh sách các bài lab với mô tả tổng quan. Hãy chuẩn bị để khám phá và làm việc với các bài tập thú vị!
+
+---
+
+## 🔬 Các Bài Lab
+
+### 1. **Lab 1: Làm Quen Với ARM Assembly**
+- **Mục Tiêu:** Giới thiệu các khái niệm cơ bản và lệnh cơ bản trong ARM Assembly.
+- **Yêu Cầu:** Viết một chương trình đơn giản về tính toán.
+
+---
+
+## 📖 Tài Nguyên Hữu Ích
+
+- [Youtube của tôi @Horob1 - nơi chia sẻ kinh nghiệm của tôi và giải đáp thắc mắc!](https://www.youtube.com/@Horob1)
+
+---
+
+## 📅 
+*Chuẩn bị bởi [Horob1] -Lập trình hợp ngữ ARM Assembly*
