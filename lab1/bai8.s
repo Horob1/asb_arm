@@ -2,16 +2,17 @@
 	AREA RESET, DATA, READONLY
 		DCD 0x20000000
 		DCD Start
+So1		DCD 20
+So2		DCD 40
 	
 	AREA MAINSOURCE, CODE, READONLY
 		ENTRY
 
-So1 EQU 20
-So2 EQU 40
+
 
 Start
-	MOV R0, #So1
-	MOV R1, #So2
+	LDR R0, So1
+	LDR R1, So2
 Loop 
 	CMP R0, R1
 	BGT HoanDoi
@@ -27,8 +28,8 @@ HoanDoi
 	B TiepTuc
 BCNN
 	MOV R3, R0 
-	MOV R0, #So1
-	MOV R1, #So2
+	LDR R0, So1
+	LDR R1, So2
 	MUL R2, R1, R0
 	UDIV R4, R2, R3
 Stop 
