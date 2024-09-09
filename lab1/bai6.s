@@ -17,7 +17,7 @@ Start
 Loop 
 	CMP R1, #N
 	BEQ Stop
-	MUL R0, R3
+	MUL R0, R0, R3
 	ADD R4, R0
 	ADD R1, #1
 	B Loop
