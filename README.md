@@ -10,6 +10,9 @@ Chào mừng bạn đến với các bài lab của môn **Lập Trình Hợp Ng
 - **Mục Tiêu:** Giới thiệu các khái niệm cơ bản và lệnh cơ bản trong ARM Assembly.
 - **Yêu Cầu:** Viết một chương trình đơn giản về tính toán.
 
+### 2. **Lab 2: Thực hành làm việc với chuỗi và ma trận**
+- **Mục Tiêu:** Biết cách thao tác với chuỗi( mảng 1 chiều) và ma trận( mảng đa chiểu) bằng các lệnh cơ bản trong ARM Assembly.
+- **Yêu Cầu:** Viết một chương trình đơn giản về xử lý dữ liệu trong chuỗi và ma trận.
 ---
 
 ## 📖 Tài Nguyên Hữu Ích
