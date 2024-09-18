@@ -1,0 +1,42 @@
+    AREA RESET, DATA, READONLY
+    DCD 0x20001000    
+    DCD Reset_Handler   
+
+    ALIGN              
+THUONG		DCD 0
+DU			DCD 0
+SO1			DCD 7 
+SO2			DCD 2 
+    AREA MYSTACK, DATA, READWRITE
+MY_STACK  DCD 0 
+
+    AREA MYCODE, CODE, READONLY
+    ENTRY
+    EXPORT Reset_Handler
+
+CHIA 	PROC
+	LDR R4, =MY_STACK
+	LDMIA R4, {R0,R1}
+	SDIV R2, R0, R1
+	MUL R3, R2, R1
+	SUBS R3, R0, R3
+	STMIA R4, {R2,R3}
+	BX LR
+	ENDP
+
+	 
+Reset_Handler 
+	LDR R0, SO1
+	LDR R1, SO2
+	LDR R4, =MY_STACK
+	STMIA R4, {R0,R1}
+	BL CHIA
+	LDR R0, =THUONG
+	LDR R1, =DU
+	LDR R4, =MY_STACK
+	LDMIA R4, {R2,R3}
+	STR R2, [R0]
+	STR R3, [R1]
+STOP	
+         B STOP
+	 END 	

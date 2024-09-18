@@ -29,7 +29,7 @@ Reset_Handler
 	 
 	 LDR 	R3, =SUM_ODD
 	 STR 	R1, [R3]
-	 ;caculate sum of odd num
+	 ;caculate sum of even num
 	 MOV 	R1, #0
 	 MOV 	R2, #2
 	 
