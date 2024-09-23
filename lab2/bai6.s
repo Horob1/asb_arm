@@ -3,7 +3,7 @@
 		DCD 0x20000000 ; do dai du lieu la bao nhieu
 		DCD Start ; 
 	ALIGN 
-; ma tran 4*5
+
 matrix
 	DCD 3 , -7, 1 , -4, 5
 	DCD -8, 3 , -1, 4, -2

@@ -31,7 +31,7 @@ Reset_Handler
   LDR R3, =MY_STACK 
   STMIA R3, {R0, R1}
 	BL SUMF
-	LDR 	R3, SUMP	;Load address of SUM to R3
+	LDR 	R3, =SUMP	;Load address of SUM to R3
 	STR 	R0, [R3]	;Store SUM
 
 STOP    

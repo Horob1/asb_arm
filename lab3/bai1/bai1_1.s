@@ -21,7 +21,7 @@ Reset_Handler
 	 LDR 	R1, N 		;Load count into R1
 	 MOV 	R0, #0 		;Clear accumulator R0
 	 BL  	SUMUP
-	 LDR 	R3, SUMP	;Load address of SUM to R3
+	 LDR 	R3, =SUMP	;Load address of SUM to R3
 	 STR 	R0, [R3]	;Store SUM
     
 
