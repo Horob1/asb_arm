@@ -1,0 +1,158 @@
+	AREA RESET, DATA, READONLY
+		DCD 0X20002000
+		DCD MAIN
+DULIEU	DCB "98EC"
+LENGTH DCB 4
+	AREA MDATA, DATA, READWRITE
+RESULT DCW 0
+	AREA MSOURCE, CODE, READONLY
+	ENTRY
+HEX_TO_BIN PROC 
+  CMP R3, #0x46
+    BEQ RETURN_15
+  CMP R3, #0x45
+    BEQ RETURN_14
+	CMP R3, #0x44
+    BEQ RETURN_13
+	CMP R3, #0x43
+    BEQ RETURN_12
+  CMP R3, #0x42
+    BEQ RETURN_11
+  CMP R3, #0x41
+    BEQ RETURN_10
+  CMP R3, #0x39
+    BEQ RETURN_9
+  CMP R3, #0x38
+    BEQ RETURN_8
+  CMP R3, #0x37
+    BEQ RETURN_7
+	CMP R3, #0x36
+    BEQ RETURN_6
+  CMP R3, #0x35
+    BEQ RETURN_5
+  CMP R3, #0x34
+    BEQ RETURN_4
+  CMP R3, #0x33
+    BEQ RETURN_3
+  CMP R3, #0x32
+    BEQ RETURN_2
+	CMP R3, #0x31
+    BEQ RETURN_1
+  CMP R3, #0x30
+    BEQ RETURN_0
+  B STOP_P
+
+RETURN_15
+    MOV R3, #0x11
+		LSL R3, #8
+		ADD R3, #0x11
+    B STOP_P
+
+RETURN_14
+    MOV R3, #0x10
+		LSL R3, #8
+		ADD R3, #0x11
+    B STOP_P
+
+RETURN_13
+    MOV R3, #0x01
+		LSL R3, #8
+		ADD R3, #0x11
+    B STOP_P
+
+RETURN_12
+    MOV R3, #0x00
+		LSL R3, #8
+		ADD R3, #0x11
+    B STOP_P
+
+RETURN_11
+    MOV R3, #0x10
+		LSL R3, #8
+		ADD R3, #0x11
+    B STOP_P
+
+RETURN_10
+    MOV R3, #0x10
+		LSL R3, #8
+		ADD R3, #0x10
+    B STOP_P
+
+RETURN_9
+    MOV R3, #0x01
+		LSL R3, #8
+		ADD R3, #0x10
+    B STOP_P
+
+RETURN_8
+    MOV R3, #0x00
+		LSL R3, #8
+		ADD R3, #0x10
+    B STOP_P
+
+RETURN_7
+    MOV R3, #0x11
+		LSL R3, #8
+		ADD R3, #0x01
+    B STOP_P
+
+RETURN_6
+    MOV R3, #0x10
+		LSL R3, #8
+		ADD R3, #0x01
+    B STOP_P
+
+RETURN_5
+    MOV R3, #0x01
+		LSL R3, #8
+		ADD R3, #0x01
+    B STOP_P
+
+RETURN_4
+    MOV R3, #0x00
+		LSL R3, #8
+		ADD R3, #0x01
+    B STOP_P
+
+RETURN_3
+		MOV R3, #0x10
+		LSL R3, #8
+    B STOP_P
+
+RETURN_2
+    MOV R3, #0x11
+		LSL R3, #8
+    B STOP_P
+
+RETURN_1
+    MOV R3, #0x1
+		LSL R3, #8
+    B STOP_P
+
+RETURN_0
+    MOV R3, #0
+    B STOP_P
+
+STOP_P
+	BX LR
+ENDP
+
+MAIN
+	LDR R0, =DULIEU; andress  of hex string
+	LDR R2, =RESULT
+	MOV R1, #0
+	MOV R6, #2
+	LDRB R4, LENGTH
+LOOP	
+	CMP R1, R4
+	BEQ STOP
+	LDRB R3, [R0, R1] ; a character of hex string stored in R3	
+	BL HEX_TO_BIN; convert hex character to binary
+	MUL R5, R1, R6
+	STRH R3, [R2, R5];
+	ADD R1, #1
+	B LOOP
+
+STOP B STOP
+	END
+	
