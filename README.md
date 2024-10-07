@@ -21,6 +21,25 @@ Chào mừng bạn đến với các bài lab của môn **Lập Trình Hợp Ng
 - **Mục Tiêu:** Biết cách thao tác với chương trình con và làm việc qua lại giữa chương trình con và chương trình chính.
 - **Yêu Cầu:** Viết các bài tập trong lab 1 bằng kiến thực học trong lab 3.
 
+### 4. **Lab 4: Thực hành làm việc với chương trình con (tiếp)**
+
+- **Mục Tiêu:** Nâng cao của lab3.
+- **Yêu Cầu:** Viết các bài tập trong lab 2 bằng chương trình con.
+
+### 5. **Lab 5: Thực hành làm việc với chuỗi bit**
+
+- **Mục Tiêu:** Biết cách thao tác với chuỗi bit cơ bản và chuyển đổi cơ số.
+- **Yêu Cầu:** Viết các bài tập chuyển đổi cơ số và thao tác với chuỗi bit.
+
+### 6. **Lab 6: Thực hành làm việc với chuỗi**
+
+- **Mục Tiêu:** Biết cách thao tác với chuỗi cơ bản.
+- **Yêu Cầu:** Viết các bài tập thao tác với chuỗi.
+
+### 7. **Lab 7: Bài tập nâng cao (mức độ vân dụng thấp)**
+
+### 8. **Lab 8: Bài tập nâng cao (mức độ vân dụng)**
+
 ---
 
 ## 📖 Tài Nguyên Hữu Ích
