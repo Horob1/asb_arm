@@ -33,9 +33,8 @@ STOP_P
 MAIN
   LDR R0, =XauRo
   LDRB R2, K
-  
-  UDIV R4, R2, #26
   MOV R5, #26
+  UDIV R4, R2, R5
   MUL R4, R4, R5
   SUB R2, R2, R4
 
