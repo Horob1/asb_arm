@@ -23,8 +23,8 @@ ENCODE PROC
   ADD R1, R1, #0X61
   B STOP_P
 HASH_UP
-  SUB R1, R1, #0X61
-  ADD R1, R1, #0X5A
+  SUB R1, R1, #0X5A
+  ADD R1, R1, #0X41
   B STOP_P
 STOP_P
   BX LR
@@ -33,6 +33,12 @@ STOP_P
 MAIN
   LDR R0, =XauRo
   LDRB R2, K
+  
+  UDIV R4, R2, #26
+  MOV R5, #26
+  MUL R4, R4, R5
+  SUB R2, R2, R4
+
   LDR R3, =XauMa
 LOOP
   LDRB R1, [R0], #1
