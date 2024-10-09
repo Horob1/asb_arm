@@ -13,7 +13,7 @@ ENCODE PROC
   BEQ STOP_P
   CMP R1, #0x61
   BLT UPPERCASE
-  SUB R1, R1, #0x7B; 0x61 + 26 (decimal)
+  SUB R1, R1, #0x7A; 0x61 + 26 (decimal)
   LDRB R1, [R2, R1]
   B STOP_P
 UPPERCASE
