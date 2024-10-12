@@ -1,4 +1,4 @@
-; tinh tong so trong chuoi	
+; tính trung bình cộng của chuỗi số
 	AREA RESET , DATA ,READONLY
 		DCD 0x20001000 ; do dai du lieu la bao nhieu
 		DCD Start ; 

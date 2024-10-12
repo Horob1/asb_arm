@@ -1,11 +1,12 @@
+	;tính giá trị x^n
 	 AREA    RESET, DATA, READONLY
-		 DCD  0x20001000     ; stack pointer value when stack is empty
-		 DCD  Reset_Handler  ; reset vector
+		 DCD  0x20001000    
+		 DCD  Reset_Handler  
   
-       ALIGN ; setting for alignment of the stack in memory, default 4 bytes
-XN	DCD 0 ; addressing a memory location {name: XN, value: 0}
-N	DCD 7 ; addressing a memory location {name: n, value: 7}
-X	DCD 2 ; addressing a memory location {name: x, value: 2}
+       ALIGN 
+XN	DCD 0 
+N	DCD 7 
+X	DCD 2 
            AREA    MYCODE, CODE, READONLY
    	   ENTRY
    	   EXPORT Reset_Handler

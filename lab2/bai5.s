@@ -1,4 +1,4 @@
-; tinh tong so trong chuoi	
+; đếm số phần tử dương, âm trong ma trận
 	AREA RESET , DATA ,READONLY
 		DCD 0x20000000 ; do dai du lieu la bao nhieu
 		DCD Start ; 

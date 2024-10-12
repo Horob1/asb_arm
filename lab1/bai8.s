@@ -1,5 +1,4 @@
-
-	AREA RESET, DATA, READONLY
+; tìm bội chung nhỏ nhất của 2 số
 		DCD 0x20000000
 		DCD Start
 So1		DCD 20

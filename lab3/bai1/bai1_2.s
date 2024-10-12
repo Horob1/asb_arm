@@ -1,11 +1,12 @@
+	;tổng các số chẵn, số lẻ <= N sử dụng thanh ghi 
 	 AREA    RESET, DATA, READONLY
-		 DCD  0x20001000     ; stack pointer value when stack is empty
-		 DCD  Reset_Handler  ; reset vector
+		 DCD  0x20001000   
+		 DCD  Reset_Handler  
   
-       ALIGN ; setting for alignment of the stack in memory, default 4 bytes
-SUM_ODD	DCD 0 ; addressing a memory location {name: SUM_ODD, value: 0}
-SUM_EVEN	DCD 0 ; addressing a memory location {name: SUM_EVEN, value: 0}
-N	DCD 5 ; addressing a memory location {name: n, value: 5}
+       ALIGN 
+SUM_ODD	DCD 0 
+SUM_EVEN	DCD 0 
+N	DCD 5 
            AREA    MYCODE, CODE, READONLY
    	   ENTRY
    	   EXPORT Reset_Handler
@@ -20,16 +21,16 @@ END_OF_FUNC
 	 ENDP
 
 Reset_Handler 
-	 LDR 	R0, N 		;Load count into R0
-	 ;caculate sum of odd num
-	 MOV 	R1, #0 		;Clear accumulator R1 <this register will store result of caculation>
+	 LDR 	R0, N 		
+	
+	 MOV 	R1, #0 		
 	 MOV 	R2, #1
 	 
 	 BL  	SUMUP
 	 
 	 LDR 	R3, =SUM_ODD
 	 STR 	R1, [R3]
-	 ;caculate sum of even num
+
 	 MOV 	R1, #0
 	 MOV 	R2, #2
 	 
