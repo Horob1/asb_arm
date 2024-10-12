@@ -1,9 +1,9 @@
 ; dung register
 	 AREA    RESET, DATA, READONLY
-		 DCD  0x20001000     ; stack pointer value when stack is empty
-		 DCD  Reset_Handler  ; reset vector
+		 DCD  0x20001000
+		 DCD  Reset_Handler 
 		 
-       ALIGN ; setting for alignment of the stack in memory, default 4 bytes
+       ALIGN 
 THUONG DCD 0
 DU DCD 0
 SO1	DCD 7 
