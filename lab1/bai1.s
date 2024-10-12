@@ -1,14 +1,11 @@
-; Lab01 bai 01 tinh tong cac so 1->n
-
-; Khai bao 
 	AREA RESET, DATA, READONLY
-		DCD 0x20000000 ; define a constant -> SP
-		DCD Start
+		DCD 0x20000000
+		DCD START
 		
 	AREA MAINSOURCE, CODE, READONLY
 		ENTRY
 		
-Start 
+START 
 	MOV R2, #0
 	MOV R1, #1
 

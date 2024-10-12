@@ -1,4 +1,3 @@
-; Tinh tong chan le < N
 	AREA RESET, DATA, READONLY
 		DCD 0x20000000
 		DCD Start
@@ -9,10 +8,10 @@
 SoLuongPhanTu EQU 5
 
 Start
-	MOV R1, #0 ; Tong chan
-	MOV R2, #0 ; Tong le 
-	MOV R3, #0 ; Chay i -> n cua chan	
-	MOV R4, #1 ; Chay i -> n cua le
+	MOV R1, #0 
+	MOV R2, #0
+	MOV R3, #0 
+	MOV R4, #1 
 	
 TongSoChan 
 	ADD R1, R3

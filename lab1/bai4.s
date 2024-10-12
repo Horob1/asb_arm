@@ -1,4 +1,3 @@
-;Tong cac co <= n chia het cho 5
 	AREA RESET, DATA, READONLY
 		DCD 0x20000000
 		DCD Start
