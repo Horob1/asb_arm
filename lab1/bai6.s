@@ -1,4 +1,4 @@
-
+; tính tổng 1 + x^2 + x^3 + … + x^n.
 	AREA RESET, DATA, READONLY
 		DCD 0x20000000
 		DCD Start

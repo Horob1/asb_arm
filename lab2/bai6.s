@@ -1,4 +1,4 @@
-; tinh tong so trong chuoi	
+; tìm giá trị lớn nhất, nhỏ nhất trên đường chéo chính, chéo phụ
 	AREA RESET , DATA ,READONLY
 		DCD 0x20000000 ; do dai du lieu la bao nhieu
 		DCD Start ; 

@@ -1,4 +1,4 @@
-; tinh tong so trong chuoi	
+; tổng các số chia hết cho 5 trong ma trận
 	AREA RESET , DATA ,READONLY
 		DCD 0x20000000 ; do dai du lieu la bao nhieu
 		DCD Start ; 

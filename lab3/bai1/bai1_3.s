@@ -1,10 +1,11 @@
+	; tính giai thừa của N
 	 AREA    RESET, DATA, READONLY
-		 DCD  0x20001000     ; stack pointer value when stack is empty
-		 DCD  Reset_Handler  ; reset vector
+		 DCD  0x20001000    
+		 DCD  Reset_Handler 
   
-       ALIGN ; setting for alignment of the stack in memory, default 4 bytes
-FAC	DCD 0 ; addressing a memory location {name: FAC, value: 0}
-N	DCD 5 ; addressing a memory location {name: n, value: 5}
+       ALIGN 
+FAC	DCD 0 
+N	DCD 5 
            AREA    MYCODE, CODE, READONLY
    	   ENTRY
    	   EXPORT Reset_Handler
@@ -16,7 +17,7 @@ FACTORIAL 	PROC
 	 ENDP
 
 Reset_Handler 
-	 LDR 	R0, N 		;Load count into R0
+	 LDR 	R0, N 		
 	 MOV 	R1, #1
 	 BL  	FACTORIAL
 	 

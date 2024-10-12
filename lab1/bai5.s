@@ -1,3 +1,4 @@
+;tính giá trị x^n.
 	AREA RESET, DATA, READONLY
 		DCD 0x20000000
 		DCD START

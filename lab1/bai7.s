@@ -1,4 +1,4 @@
-
+;tìm ước chung lớn nhất của 2 số
 	AREA RESET, DATA, READONLY
 		DCD 0x20000000
 		DCD Start
