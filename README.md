@@ -45,6 +45,7 @@ Chào mừng bạn đến với các bài lab của môn **Lập Trình Hợp Ng
 ## 📖 Tài Nguyên Hữu Ích
 
 - [Youtube của tôi @Horob1 - nơi chia sẻ kinh nghiệm của tôi và giải đáp thắc mắc!](https://www.youtube.com/@Horob1)
+- Bảng mã ascii
 
 ![Bảng mã ascii!](bang-ma-ASCII-1.jpg "Bảng mã ascii!")
 
