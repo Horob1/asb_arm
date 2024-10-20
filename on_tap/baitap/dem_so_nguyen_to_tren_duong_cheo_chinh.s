@@ -1,0 +1,49 @@
+	AREA RESET , DATA ,READONLY
+		DCD 0x20000000
+		DCD Start ; 
+matrix
+	DCB 3, -7, 1
+	DCB -8, 2, 1
+	DCB 9, -6, 2
+row	DCB 3
+	AREA mycode, CODE ,READONLY
+	ENTRY
+
+IS_SO_NGTO PROC
+  CMP R5, #0
+  BEQ Stop_P
+  CMP R5, #1
+  BEQ INCREASE
+  MOV R6, #2
+LOOP_P
+  CMP R5, R6
+  BEQ INCREASE
+  UDIV R7, R5, R6
+  MUL R7, R7, R6
+  CMP R7, R5
+  BEQ Stop_P
+  ADD R6, #1
+  B LOOP_P
+INCREASE
+  ADD R3, #1
+Stop_P 
+  BX LR 
+ENDP
+
+Start
+  LDR R0, =matrix ; dia chi matran
+  LDRB R1, row
+  MOV R3, #0
+  MOV R2, #0 ; offset
+  MOV R4, #0
+LOOP
+	CMP R2, R1
+	BEQ STOP
+	LDRB R5, [R0, R4]
+	BL IS_SO_NGTO
+  ADD R4, R1
+  ADD R4, #1
+	ADD R2, #1
+  B LOOP
+STOP B STOP
+  END

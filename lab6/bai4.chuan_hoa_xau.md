@@ -55,8 +55,14 @@ LowerCase
     B Loop                          ; Quay lại vòng lặp chính
 
 Done
-    STRB R2, [R1]                   ; Kết thúc chuỗi đầu ra bằng ký tự null
-    SWI &11                         ; Kết thúc chương trình
-
-    END                             ; Kết thúc chương trình
+    ;check trường hợp có dấu cách ở cuối và không có dấu cách ở cuối
+    CMP R2, #1
+    BNE _SAVE
+    STRB R3, [R1, #-1]
+    B _END
+_SAVE
+    STRB R3, [R1]
+_END
+        SWI &11
+        END
 ```

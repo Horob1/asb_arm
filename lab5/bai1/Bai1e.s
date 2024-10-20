@@ -1,0 +1,82 @@
+/*AREA RESET,DATA,READONLY
+		DCD 0x20001000
+		DCD Start
+A DCB 3,4,2,5,7
+N DCD 5
+	AREA KETQUA,DATA,READWRITE
+KQ_FINAL DCD 0,0,0,0,0
+KQ DCD 0,0,0,0,0
+
+	AREA MYCODE,CODE,READONLY
+		ENTRY
+DichBit PROC
+	LSRS R3, #1 
+	MOVCC R4, #0 
+	MOVCS R4, #1 
+	STRB R4, [R0], #1
+	ADD R10,#1
+	
+	BX LR
+	ENDP
+Start PROC
+	LDR R0,=KQ
+	LDR R1,=A
+	LDR R2,N
+	MOV R10,#0
+Loop 
+	CMP R2,#0
+	BLE Chuyen
+	LDRB R3,[R1],#1
+	BL DichBit
+	BL DichBit
+	BL DichBit
+	SUB R2,#1
+	B Loop
+Chuyen
+	LDR R9,=KQ_FINAL
+	LDRB R3,[R0],#-1
+	MOV R5,#1
+	MOV R6,#2
+	MOV R7,#4
+	MOV R8,#8
+Loop1
+	MOV R11,#0
+	LDRB R3,[R0],#-1
+	MUL R3,R5
+	ADD R11,R3
+	SUB R10,#1
+	CMP R10,#0
+	BLE Stop
+	
+	LDRB R3,[R0],#-1
+	MUL R3,R6
+	ADD R11,R3
+	SUB R10,#1
+	CMP R10,#0
+	BLE Stop
+	
+	LDRB R3,[R0],#-1
+	MUL R3,R7
+	ADD R11,R3
+	SUB R10,#1
+	CMP R10,#0
+	BLE Stop
+	
+	LDRB R3,[R0],#-1
+	MUL R3,R8
+	ADD R11,R3
+	SUB R10,#1
+	CMP R10,#0
+	BLE Stop
+	
+	STRB R11,[R9],#1
+	B Loop1
+Stop
+	STRB R11,[R9],#1
+	B Stop_true
+Stop_true
+	B Stop_true
+	END
+	*/
+
+		

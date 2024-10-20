@@ -1,0 +1,41 @@
+	AREA RESET,DATA,READONLY
+		DCD 0x20000000
+		DCD Start
+A DCD 1,0,1,1,0,1,1,1
+N DCD 8
+KQ DCD 0
+	AREA MYCODE,CODE,READONLY
+		ENTRY
+Start
+	MOV R0,#0
+	LDR R1,=A
+	LDR R2,N
+	MOV R4,#4
+	MOV R3,R2
+	SUB R3,#1
+	MUL R3,R4
+	ADD R1,R3
+	MOV R5,#2
+	MOV R6,#2
+	MOV R7,#2
+	LDR R3,[R1],#-4
+	CMP R3,#0
+	BGT BitDauLa1
+	B Loop
+	
+BitDauLa1
+	ADD R0,#1
+	B Loop
+
+Loop
+	CMP R5,R2
+	BGT Done
+	LDR R3,[R1],#-4
+	MUL R3,R6
+	ADD R0,R3
+	MUL R6,R7
+	ADD R5,#1
+	B Loop
+Done
+	B Done
+	END

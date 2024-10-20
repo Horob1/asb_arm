@@ -47,7 +47,12 @@
         B Loop
 
     Done
-        STRB R2, [R1]            
+        CMP R2, #1 
+        BNE _SAVE
+        STRB R3, [R1, #-1]    
+        B _END 
+    _SAVE
+        STRB R3, [R1]   
+    _END         
         SWI &11                  
-
         END
