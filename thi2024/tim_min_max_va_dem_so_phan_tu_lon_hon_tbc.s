@@ -12,7 +12,7 @@ N DCB 6
 	ENTRY
 Main
 	LDR R0, =A; R0 chua dia chi cua day
-	LDR R1, N; R1 chua so phan tu
+	LDRB R1, N; R1 chua so phan tu
 	LDRB R2, [R0]; chi phan tu dau tien cua day
 	MOV R3, R2; chua min
 	MOV R4, R2; chua max
