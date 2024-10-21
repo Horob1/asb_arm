@@ -2,6 +2,7 @@
 
 Chào mừng bạn đến với các bài lab của môn **Lập Trình Hợp Ngữ ARM Assembly**! Dưới đây là danh sách các bài lab với mô tả tổng quan. Hãy chuẩn bị để khám phá và làm việc với các bài tập thú vị!
 
+# ⚠️ Lưu ý: CODE mẫu chưa validate dữ liệu đầu vào và handle các trường hơp ngoại lệ (các bạn muốn tham khảo phải phát triển thêm nhé!)
 ---
 
 ## 🔬 Các Bài Lab
