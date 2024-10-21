@@ -1,0 +1,68 @@
+Lab 1
+(Lab1Bai1) - 1.Viết chương trình tính tổng các số <= N.
+(Lab1Bai2) - 2.Viết chương trình tính tổng các số chẵn, số lẻ <= N.
+(Lab1Bai3) - 3.Viết chương trình tính giai thừa của N.
+(Lab1Bai4) - 4.Viết chương trình tính tổng các số <= N và chia hết cho 5.
+(Lab1Bai5) - 5.Viết chương trình tính giá trị xn.
+(Lab1Bai6) - 6.Viết chương trình tính tổng 1 + x2 + x3 + … + xn.
+(Lab1Bai7) - 7.Viết chương trình tìm ước chung lớn nhất của 2 số.
+(Lab1Bai8) - 8.Viết chương trình tìm bội chung nhỏ nhất của 2 số.
+Lab 2
+(Lab2Bai1) - 1.Viết chương trình tính tổng các phần tử trong chuỗi số. 
+(Lab2Bai2) - 2.Viết chương trình tìm giá trị lớn nhất và nhỏ nhất trong chuỗi số.
+(Lab2Bai3) - 3.Viết chương trình tính trung bình cộng của chuỗi số.
+(Lab2Bai4) - 4.Viết chương trình tính tổng các phần tử trong ma trận
+(Lab2Bai5) - 5.Viết chương trình đếm số phần tử dương, âm trong ma trận
+(Lab2Bai6) - 6.Viết chương trình tìm giá trị lớn nhất, nhỏ nhất trên đường chéo chính, chéo phụ
+(Lab2Bai7) - 7.Viết chương trình tính tổng các số chẵn, lẻ trong ma trận
+(Lab2Bai8) - 8.Viết chương trình tính tổng các số chia hết cho 5 trong ma trận
+Lab 3
+(Lab3Bai1) - 1.Viết các chương trình sau dưới dạng chương trình con. Sử dụng các thanh ghi chung để truyền tham số giữa chương trình chính và chương trình con.
+2.Viết các chương trình sau dưới dạng chương trình con. Sử dụng ngăn xếp để truyền tham số giữa chương trình chính và chương trình con.
+(Lab3Bai2a) - a.Viết chương trình tính tổng các số <= N.
+(Lab3Bai2b) - b.Viết chương trình tính tổng các số chẵn, số lẻ <= N.
+(Lab3Bai2c) - c.Viết chương trình tính giai thừa của N.
+(Lab3Bai2d) - d.Viết chương trình tính tổng các số <= N và chia hết cho 5.
+(Lab3Bai2e) - e.Viết chương trình tính giá trị xn.
+(Lab3Bai2f) - f.Viết chương trình tính tổng 1 + x2 + x3 + … + xn.
+(Lab3Bai2g) - g.Viết chương trình tìm ước chung lớn nhất của 2 số.
+(Lab3Bai2h) - h.Viết chương trình tìm bội chung nhỏ nhất của 2 số.
+(Lab3Bai3) - 3.Viết chương trình thực hiện phép chia 2 số nguyên (lấy phần nguyên và phần dư) dựa trên phép trừ.
+Lab 4
+1.Viết chương trình gồm hàm main và các chương trình con sau:
+(Lab4Bai1a) - a.Tính tổng các phần tử trong chuỗi số.
+(Lab4Bai1b) - b.Tìm ƯCLN của 2 số
+(Lab4Bai1c) - c.Viết chương trình tìm giá trị lớn nhất và nhỏ nhất trong chuỗi số.
+(Lab4Bai1d) - d.Viết chương trình tính trung bình cộng của chuỗi số.
+(Lab4Bai1e) - e.Viết chương trình tính tổng các phần tử trong ma trận
+(Lab4Bai1f) - f.Viết chương trình đếm số phần tử dương, âm trong ma trận
+(Lab4Bai1g) - g.Viết chương trình tìm giá trị lớn nhất, nhỏ nhất trên đường chéo chính, chéo phụ
+(Lab4Bai1h) - h.Viết chương trình tính tổng các số chẵn, lẻ trong ma trận
+(Lab4Bai1i) - i.Viết chương trình tính tổng các số chia hết cho 5 trong ma trận
+(Lab4Bai1j) - j.Tìm ƯCLN của 1 chuỗi
+Lab 5
+1.Viết các chương trình con thực hiện các công việc sau:
+(Lap5Bai1a) - a.Chuyển từ số hệ 16 sang hệ 2 
+(Lap5Bai1b) - b.Chuyển số hệ 10 sang hệ 2
+(Lap5Bai1c) - c.Chuyển số hệ 10 sang hệ 16
+(Lap5Bai1d) - d.Chuyển số hệ 2 sang hệ 8
+(Lap5Bai1e) - e.Chuyển số hệ 8 sang 16
+(Lap5Bai1f) - f.Chuyển số hệ 16 sang 8
+(Lap5Bai1g) - g.Chuyển số từ hệ 2 sang hệ 10.
+(Lap5Bai2) - 2.Viết chương trình xác định mã chẵn lẻ của các chuổi bit.
+(Lap5Bai3) - 3.Viết chương trình con đếm các số nguyên tố <= N.
+(Lap5Bai4) - 4.Viết chương trình con tính tổng các số nguyên tố trong một chuỗi số
+Lab 6
+(Lap6Bai1) - 1.Viết các chương trình so sánh 2 xâu (cài đặt theo độ dài)
+(Lap6Bai2) - 2.Viết chương trình đếm số ký tự của một xâu cài đặt theo ký tự kết thúc.
+(Lap6Bai3) - 3.Viết chương trình đảo ngược xâu trong hai trường hợp cài đặt theo độ dài và ký tự kết thúc
+(Lap6Bai4) - 4.Viết chương trình chuẩn hóa xâu
+(Lap6Bai5) - 5.Viết chương trình nối hai xâu.
+Lab 7
+(Lap7Bai1) - 1.Viết các chương trình tính tích vô hướng của 2 vector
+(Lap7Bai2) - 2.Viết chương trình tính tổng, hiệu, tích 2 ma trận
+(Lap7Bai3) - 3.Viết chương trình chỉnh hợp chập k của N
+Lab 8
+(Lap8Bai1) - 1.Viết chương trình thực hiện mã hóa chuyển vị; Dữ liệu rõ chứa trong XauRo; Khóa K: chứa trong  biến nhớ k; Dữ liệu mã chứa trong XauMa
+(Lap8Bai2) - 2.Viết chương trình thực hiện mã hóa thay thế; Dữ liệu rõ chứa trong XauRo; Khóa K: mảng các ký tự được thay thế tương ứng; Dữ liệu mã chứa trong XauMa
+(Lap8Bai3) - 3.Viết chương trình thực hiện mã hóa hoán vị toàn cục; Dữ liệu rõ chứa trong XauRo; Khóa K: mảng các chỉ số hoán vị tương ứng; Dữ liệu mã chứa trong XauMa
