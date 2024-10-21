@@ -13,7 +13,7 @@ N DCB 6
 Main
 	LDR R0, =A; R0 chua dia chi cua day
 	LDR R1, N; R1 chua so phan tu
-	LDR R2, [R0]; chi phan tu dau tien cua day
+	LDRB R2, [R0]; chi phan tu dau tien cua day
 	MOV R3, R2; chua min
 	MOV R4, R2; chua max
 	MOV R5, R2; chua tong
@@ -22,7 +22,7 @@ Main
 LOOP
 	CMP R6, R1
 	BEQ STOP
-	LDR R2, [R0, R6]; R2 chua phan tu hien tai
+	LDRB R2, [R0, R6]; R2 chua phan tu hien tai
 	ADD R6, R6, #1
 	ADD R5, R2;
 	CMP R2, R3
