@@ -1,0 +1,2 @@
+1, Nêu nguyên lý của các câu lệnh thao tác trên bit (Giáo trình)
+2, Dịch câu lệnh là dịch địa chỉ có khác nhau không (Không)
